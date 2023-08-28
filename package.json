@@ -1,0 +1,13 @@
+{
+  "name": "hacker-rank",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.4.4",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "ts-node": "^10.9.1"
+  }
+}

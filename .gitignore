@@ -1,0 +1,7 @@
+node_modules/
+dist/
+yarn.lock
+
+# Remaining 
+preparation-kit/flipping-matrix.js
+preparation-kit/median.js

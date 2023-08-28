@@ -22,30 +22,32 @@ function readLine() {
     return inputString[currentLine++];
 }
 
-
-
 /*
- * Complete the 'findMedian' function below.
+ * Complete the 'lonelyinteger' function below.
  *
  * The function is expected to return an INTEGER.
- * The function accepts INTEGER_ARRAY arr as parameter.
+ * The function accepts INTEGER_ARRAY a as parameter.
  */
 
-function findMedian(arr) {
-
-    arr.sort((a,b) =>{
-        if( a < b){
+function lonelyinteger(a) {
+    a.sort((a, b) =>{
+        if(a < b){
             return -1;
         }
-        if( a > b){
-            return 1;
+        if(a > b){
+            return 1
         }
+
         return 0;
     });
-    console.log(arr)
-    const median_index = Math.floor(arr.length /2);
-    return arr[median_index];
-
+    console.log(a)
+    for(let i = 0; i < a.length; i = i +2){
+        if(a[i] === a[i+1]){
+            continue
+        }else{
+            return a[i]
+        }
+    }
 }
 
 function main() {
@@ -53,9 +55,8 @@ function main() {
 
     const n = parseInt(readLine().trim(), 10);
 
-    const arr = readLine().replace(/\s+$/g, '').split(' ').map(arrTemp => parseInt(arrTemp, 10));
-    const result = findMedian(arr);
-    console.log(result)
+    const a = readLine().replace(/\s+$/g, '').split(' ').map(aTemp => parseInt(aTemp, 10));
+    const result = lonelyinteger(a);
 
     ws.write(result + '\n');
 
