@@ -31,7 +31,7 @@ function miniMaxSum(arr) {
     const min_sum = sorted_array[0] + sorted_array[1] + sorted_array[2] + sorted_array[3];
     const max_sum = sorted_array[1] + sorted_array[2] + sorted_array[3] + sorted_array[4];
     
-    console.log(`${min_sum}  ${max_sum}`);
+    console.log(`${min_sum} ${max_sum}`);
 
 }
 
