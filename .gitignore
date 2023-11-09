@@ -2,6 +2,8 @@ node_modules/
 dist/
 yarn.lock
 todo.md
+*/input.txt
+*/output.txt
 # Remaining 
 preparation-kit/flipping-matrix.js
 preparation-kit/median.js
